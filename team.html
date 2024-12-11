@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>team</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Наша команда</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="team.html">О команде</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p>Мы — команда увлеченных волейболисток, стремящихся к победе!</p>
+
+            <div class="mainchast">
+                <div class="container">
+                  <h2>Галерея нашей команды</h2>
+                  <hr>
+                  <div class="img-container">
+                    <div class="img">
+                      <img src="команда1.jpg" alt="">
+                    </div>
+                    <div class="img">
+                      <img src="volleyball.jpg" alt="">
+                    </div>
+                    <div class="img">
+                      <img src="команда3.jpg" alt="">
+                    </div>
+                    <div class="img">
+                      <img src="команда4.jpg" alt="">
+                    </div>
+                    <div class="img">
+                      <img src="команда5.jpg" alt="">
+                    </div>
+                    <div class="img">
+                      <img src="команда6.jpg" alt="">
+                    </div>
+                    <div class="img">
+                      <img src="команда7.jpg" alt="">
+                    </div>
+                    <div class="img">
+                      <img src="команда8.jpg" alt="">
+                    </div>
+                    <div class="img">
+                      <img src="команда9.jpg" alt="">
+                    </div>
+                    <div class="img">
+                      <img src="команда10.jpg" alt="">
+                    </div>
+                    <div class="img">
+                      <img src="команда11.jpg" alt="">
+                    </div>
+                    <div class="img">
+                      <img src="команда12.jpg" alt="">
+                    </div>
+                  </div>
+                  <hr>
+
+                  <div class="pop-up">
+                    <span>&times;</span>
+                    <img src="kartinki/car1.jpg">
+                  </div>
+
+                </div>
+
+                <script>
+                    document.querySelectorAll('.img-container img').forEach(img =>{
+                      img.onclick = () =>{
+                      document.querySelector('.pop-up').style.display = 'block';
+                      document.querySelector('.pop-up img').src = img.getAttribute('src');
+                    }
+                  });
+          
+                  document.querySelector('.pop-up span').onclick = () =>{
+                    document.querySelector('.pop-up').style.display = 'none';
+                  }
+          
+                  </script>
+
+              </div>
+        </section>
+
+    </main>
+    <div class="footer">
+        <p>&copy; 2024 Волейбол. ЮГУ.</p>
+        <p>+7(922) 437 42-41</p>
+        <p>udikolenko@inbox.ru</p>
+    </div>
+</body>
+</html>
